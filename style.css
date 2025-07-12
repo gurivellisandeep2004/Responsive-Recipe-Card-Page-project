@@ -1,0 +1,83 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #ffe5b4;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1.5rem;
+}
+.card-content h2 {
+  color: #d35400;
+  margin-bottom: 0.5rem;
+}
+.description {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  margin-top: 1rem;
+  color: #2c3e50;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffe5b4;
+  margin-top: 2rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
